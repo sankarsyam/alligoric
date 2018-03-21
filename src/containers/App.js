@@ -16,9 +16,9 @@ export class App extends Component {
   checkAuthenticated(component, path) {
     const Component = component;
     return this.props.isAuthenticated ? (
-      <Redirect to="/dashboard" />
+      <Redirect to={path} />
     ) : (
-      <Component to={path} />
+      <Component to="/login" />
     );
   }
 

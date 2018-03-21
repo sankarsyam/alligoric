@@ -11,13 +11,16 @@ import './Header.css';
 
 class Header extends Component {
   renderMenuDrawer() {
-    return (
+    console.log(
+      '############# this.props.isAuthenticated ' + this.props.isAuthenticated
+    );
+    return this.props.isAuthenticated ? (
       <MenuDrawer
         handleLogout={() => this.props.dispatch(logout())}
         history={this.props.history}
         isAuthenticated={this.props.isAuthenticated}
       />
-    );
+    ) : null;
   }
 
   render() {
@@ -27,7 +30,7 @@ class Header extends Component {
           actions={[this.renderMenuDrawer()]}
           className="Header-toolbar"
           colored
-          title="Redux Template"
+          title="React - Learning Portal"
         />
       </div>
     );
