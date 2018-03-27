@@ -1,7 +1,7 @@
 .DashboardPage{
-    background-color: #222;
+    background-color: #181818;
     color: #aaa;
-    height: 500px;
+    /* height: 500px; */
 }
 
 .grid-example{
@@ -10,13 +10,13 @@
     font-weight: 300;
     line-height: 24px;
     letter-spacing: -0.21px; */
-    background-color: #222;
+    background-color: #181818;
     /* margin: 15px !important; */
 }
 
 .grid-example .md-cell {
-    background: #696969;
+    background: #222222;
     color: #fff;
-    height: 250px;
+    height: 150px;
     padding: 16px;
 }

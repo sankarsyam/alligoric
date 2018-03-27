@@ -1,8 +1,8 @@
 header.Header-toolbar {
-  background-color: #696969;
-  height: 48px;
- }
+  height: 48px; 
+  background-color:#222222;
+  border-bottom: 1px solid #181818;
+}
   header.Header-toolbar > h2.md-title {
     line-height: 48px;
     margin: 0 0 0 20px; }
-
