@@ -7,7 +7,7 @@ import './Dashboard.css';
 class DashboardPage extends Component {
   render() {
     return (
-      <div className="">
+      <div className="DashboardPage">
         <div>
           <Grid className="grid-example">
             {Array.from(Array(3)).map((_, i) => (

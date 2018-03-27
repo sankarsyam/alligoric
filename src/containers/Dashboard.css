@@ -1,17 +1,8 @@
 .DashboardPage{
+    /* background-color: #181818;
+    color: #aaa; */
+    min-height: 92.5vh;
     background-color: #181818;
-    color: #aaa;
-    /* height: 500px; */
-}
-
-.grid-example{
-    /* font-family: "Gotham SSm A","Gotham SSm B",sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 24px;
-    letter-spacing: -0.21px; */
-    background-color: #181818;
-    /* margin: 15px !important; */
 }
 
 .grid-example .md-cell {

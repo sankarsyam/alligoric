@@ -2,5 +2,12 @@
     width: 4%;
     background-color: #222222;
     height: 92.5vh;
-    float: left
+    float: left;
+}
+
+.menu-icon{
+     width: 90%;
+     height: 30px;
+     color: #aaa;
+     margin-top: 15px;
 }
