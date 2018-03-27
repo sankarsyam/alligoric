@@ -8,6 +8,7 @@ import DashboardPage from './DashboardPage';
 import HomePage from './HomePage';
 import LoginPage from './LoginPage';
 import RequireAuthentication from './RequireAuthentication';
+import AppMenu from './AppMenu';
 
 import './App.css';
 import 'material-design-icons/iconfont/material-icons.css';
@@ -26,7 +27,7 @@ export class App extends Component {
     return (
       <div className="App">
         <Header />
-
+        <AppMenu />
         <div className="App-content">
           <Switch>
             <Route
