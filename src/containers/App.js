@@ -23,11 +23,13 @@ export class App extends Component {
     );
   }
 
+  headerMenu = () => {};
   render() {
     return (
       <div className="App">
-        <Header />
-        <AppMenu />
+        {this.props.isAuthenticated ? <Header /> : null}
+        {this.props.isAuthenticated ? <AppMenu /> : null}
+
         <div className="App-content">
           <Switch>
             <Route
