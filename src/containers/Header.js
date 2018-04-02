@@ -6,6 +6,7 @@ import Toolbar from 'react-md/lib/Toolbars';
 
 import MenuDrawer from '../components/MenuDrawer';
 import { logout } from '../store/user/action';
+import AccountDropdown from '../components/AccountDropdown';
 
 import './Header.css';
 
@@ -15,10 +16,14 @@ class Header extends Component {
       '############# this.props.isAuthenticated ' + this.props.isAuthenticated
     );
     return this.props.isAuthenticated ? (
-      <MenuDrawer
+      // <MenuDrawer
+      //   handleLogout={() => this.props.dispatch(logout())}
+      //   history={this.props.history}
+      //   isAuthenticated={this.props.isAuthenticated}
+      // />
+      <AccountDropdown
         handleLogout={() => this.props.dispatch(logout())}
-        history={this.props.history}
-        isAuthenticated={this.props.isAuthenticated}
+        name={this.props.userName}
       />
     ) : null;
   }
@@ -45,6 +50,7 @@ Header.propTypes = {
 
 const mapStateToProps = state => ({
   isAuthenticated: state.user.isAuthenticated,
+  userName: state.user.name,
 });
 
 export default withRouter(connect(mapStateToProps)(Header));
