@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
+import ImageURL from '../assets/images/users/syam.jpg';
 
 import {
   Avatar,
@@ -23,15 +24,15 @@ class AccountMenu extends Component {
   }
   render() {
     return (
-      <DropdownMenu
+      <DropdownMenu className="loginuser-in-header"
 
         menuItems={[{
           primaryText: 'Log Out',
           className: 'MenuDrawer-link',
-          onClick: () => this.props.handleLogout
+          onClick: () => this.props.handleLogout()
         }]}
         anchor={{
-          x: DropdownMenu.HorizontalAnchors.CENTER,
+          x: DropdownMenu.HorizontalAnchors.BOTTOM,
           y: DropdownMenu.VerticalAnchors.BOTTOM,
         }}
         position={DropdownMenu.Positions.TOP_LEFT}
@@ -47,7 +48,7 @@ class AccountMenu extends Component {
             </IconSeparator>
           }
         >
-          <Avatar suffix="pink">S</Avatar>
+          <Avatar src={ImageURL} role="presentation" />
         </AccessibleFakeButton>
       </DropdownMenu>
     );

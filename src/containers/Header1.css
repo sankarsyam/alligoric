@@ -8,3 +8,7 @@ header.Header-toolbar > h2.md-title {
   line-height: 48px;
   margin: 0 0 0 20px;
  }
+
+ .loginuser-in-header {
+     margin-top: 5px;
+ }
