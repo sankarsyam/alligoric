@@ -7,9 +7,14 @@ const authenticate = user => ({ type: ActionTypes.AUTHENTICATE, user });
 export const logout = () => ({ type: ActionTypes.LOGOUT });
 
 export function loginCheck(username, password) {
-  userLogin(username, password);
+  const user = userLogin(username, password);
+  console.log(user);
   return (dispatch, getState) => {
-    dispatch(authenticate({ username, password }));
-    dispatch(push(`/dashboard`));
+    if (user) {
+      dispatch(authenticate(user));
+      dispatch(push(`/dashboard`));
+    } else {
+      dispatch(push(`/login`));
+    }
   };
 }

@@ -22,7 +22,7 @@ class LoginPage extends Component {
   onSubmit(event) {
     event.preventDefault(); // to prevent refresh(default form behaviour)
     const { email, password } = this.state;
-    this.props.dispatch(loginCheck({ email, password }));
+    this.props.dispatch(loginCheck(email, password));
     this.setState({ email: '', password: '' });
     // history('/dashboard');
   }

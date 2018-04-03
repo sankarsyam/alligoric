@@ -2,16 +2,14 @@ import createReducer from '../createReducer';
 import * as ActionTypes from '../actionTypes';
 
 const initialUserState = {
-  id: null,
   isAuthenticated: false,
-  name: null,
+  loggedInUser: null,
 };
 
 export const user = createReducer(initialUserState, {
   [ActionTypes.AUTHENTICATE](state, action) {
-    const { id, name } = action.user;
-    debugger;
-    return { ...state, isAuthenticated: true, id, name };
+    const loggedInUser = action.user;
+    return { ...state, isAuthenticated: true, loggedInUser };
   },
   [ActionTypes.LOGOUT](state, action) {
     return { ...state, ...initialUserState };
