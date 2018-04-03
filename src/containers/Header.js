@@ -8,7 +8,7 @@ import MenuDrawer from '../components/MenuDrawer';
 import { logout } from '../store/user/action';
 import AccountDropdown from '../components/AccountDropdown';
 
-import './Header.css';
+import './Header1.css';
 
 class Header extends Component {
   renderMenuDrawer() {
