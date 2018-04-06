@@ -1,0 +1,8 @@
+.HomePage {
+  min-height: 92.5vh;
+  background-color: #181818;
+}
+.home-image{
+  width: 40%;
+  float: left;
+}

@@ -59,7 +59,6 @@ class AccountMenu extends Component {
 
 AccountMenu.propTypes = {
   dispatch: PropTypes.func,
-  history: PropTypes.object,
   isAuthenticated: PropTypes.bool.isRequired,
   loginUser: PropTypes.object
 };

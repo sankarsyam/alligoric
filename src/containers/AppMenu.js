@@ -9,10 +9,14 @@ import TiDatabase from 'react-icons/lib/ti/database';
 
 class AppMenu extends Component {
   render() {
+    const { history, isAuthenticated } = this.props;
     return (
       <div className="AppMenu">
-        <MdHome className="menu-icon" />
-        <MdDashboard className="menu-icon" />
+        <MdHome className="menu-icon" onClick={() => history.push('/home')} />
+        <MdDashboard
+          className="menu-icon"
+          onClick={() => history.push('/dashboard')}
+        />
         <MdWork className="menu-icon" />
         <MdInbox className="menu-icon" />
         <TiContacts className="menu-icon" />

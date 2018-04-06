@@ -4,8 +4,8 @@ import { connect } from 'react-redux';
 import { Redirect, Route, Switch, withRouter } from 'react-router-dom';
 
 import Header from './Header';
-import DashboardPage from './DashboardPage';
-import HomePage from './HomePage';
+import DashboardPage from '../components/DashboardPage';
+import HomePage from '../components/HomePage';
 import LoginPage from './LoginPage';
 import RequireAuthentication from './RequireAuthentication';
 import AppMenu from './AppMenu';
@@ -28,7 +28,9 @@ export class App extends Component {
     return (
       <div className="App">
         {this.props.isAuthenticated ? <Header /> : null}
-        {this.props.isAuthenticated ? <AppMenu /> : null}
+        {this.props.isAuthenticated ? (
+          <AppMenu history={this.props.history} />
+        ) : null}
 
         <div className="App-content">
           <Switch>
