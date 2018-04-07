@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './HomePage.css';
+import './Home.css';
 import { GridList, Card, Media } from 'react-md';
 import images from '../assets/images/sampleimages/img';
 
