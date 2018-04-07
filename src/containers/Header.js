@@ -3,8 +3,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import Toolbar from 'react-md/lib/Toolbars';
-
-import MenuDrawer from '../components/MenuDrawer';
 import { logout } from '../store/user/action';
 import AccountDropdown from '../components/AccountDropdown';
 
