@@ -11,7 +11,7 @@ class DashboardPage extends Component {
         <div>
           <Grid className="grid-example">
             {Array.from(Array(3)).map((_, i) => (
-              <Cell key={i} size={4}>
+              <Cell key={i} size={4} className="DashboardPage-cell">
                 4
               </Cell>
             ))}
