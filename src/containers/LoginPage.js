@@ -85,6 +85,7 @@ LoginPage.propTypes = {
 
 const mapStateToProps = state => ({
   isAuthenticated: state.user.isAuthenticated,
+  // error: state.user.message?state.user.message.list[0]:'',
 });
 
 export default withRouter(connect(mapStateToProps)(LoginPage));

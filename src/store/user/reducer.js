@@ -14,6 +14,9 @@ export const user = createReducer(initialUserState, {
   [ActionTypes.LOGOUT](state, action) {
     return { ...state, ...initialUserState };
   },
+  [ActionTypes.FLASH_MESSAGE__CREATE](state, action) {
+    return { ...state, message: action.message };
+  },
 });
 
 export default user;
