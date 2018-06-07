@@ -12,3 +12,7 @@
 .LoginPage-login-button.rrm-btn {
   margin: 20px 0 0;
 }
+
+.login-page-error {
+  color: red;
+}

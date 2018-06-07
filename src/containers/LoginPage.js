@@ -29,7 +29,7 @@ class LoginPage extends Component {
 
   renderError() {
     if (this.props.error) {
-      return <div className="error">{this.props.error}</div>;
+      return <div className="login-page-error">{this.props.error}</div>;
     }
   }
 
@@ -85,7 +85,7 @@ LoginPage.propTypes = {
 
 const mapStateToProps = state => ({
   isAuthenticated: state.user.isAuthenticated,
-  // error: state.user.message?state.user.message.list[0]:'',
+  error: state.user.message ? state.user.message.list[0] : '',
 });
 
 export default withRouter(connect(mapStateToProps)(LoginPage));
