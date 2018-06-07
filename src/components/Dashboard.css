@@ -1,13 +1,4 @@
-.DashboardPage{
-    /* background-color: #181818;
-    color: #aaa; */
-    min-height: 92.5vh;
-    background-color: #181818;
-}
-
-.grid-example .md-cell {
-    background: #222222;
-    color: #fff;
-    height: 150px;
-    padding: 16px;
+.DashboardPage {
+  min-height: 92.5vh;
+  background-color: #181818;
 }

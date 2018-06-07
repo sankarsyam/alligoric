@@ -19,7 +19,7 @@ export function loginCheck(username, password) {
     const user = userLogin(username, password);
     return (dispatch, getState) => {
       dispatch(authenticate(user));
-      dispatch(push(`/dashboard`));
+      dispatch(push(`/home`));
     };
   } catch (error) {
     return (dispatch, getState) => {

@@ -10,9 +10,6 @@ import './Header1.css';
 
 class Header extends Component {
   renderMenuDrawer() {
-    console.log(
-      '############# this.props.isAuthenticated ' + this.props.isAuthenticated
-    );
     return this.props.isAuthenticated ? (
       // <MenuDrawer
       //   handleLogout={() => this.props.dispatch(logout())}

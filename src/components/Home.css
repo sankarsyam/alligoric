@@ -3,7 +3,9 @@
   background-color: #181818;
 }
 
-.home-image{
-  width: 40%;
-  float: left;
+.grid-example .md-cell {
+  background: #222222;
+  color: #fff;
+  height: 150px;
+  padding: 16px;
 }
