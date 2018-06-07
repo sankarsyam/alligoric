@@ -11,11 +11,6 @@ import './Header1.css';
 class Header extends Component {
   renderMenuDrawer() {
     return this.props.isAuthenticated ? (
-      // <MenuDrawer
-      //   handleLogout={() => this.props.dispatch(logout())}
-      //   history={this.props.history}
-      //   isAuthenticated={this.props.isAuthenticated}
-      // />
       <AccountDropdown
         handleLogout={() => this.props.dispatch(logout())}
         name={this.props.userName}

@@ -27,7 +27,7 @@ export class App extends Component {
   render() {
     return (
       <div className="App">
-        {this.props.isAuthenticated ? <Header /> : null}
+        <Header />
         {this.props.isAuthenticated ? (
           <AppMenu history={this.props.history} />
         ) : null}

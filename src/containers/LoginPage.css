@@ -1,10 +1,14 @@
 .LoginPage-card.md-card {
   width: 30%;
-  margin-top: 10%; }
+  margin-top: 10%;
+  border: 1px solid lightgrey;
+}
 
 .LoginPage-card-text * > .rrm-btn-container {
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+}
 
 .LoginPage-login-button.rrm-btn {
-  margin: 20px 0 0; }
+  margin: 20px 0 0;
+}
