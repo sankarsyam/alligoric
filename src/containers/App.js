@@ -6,6 +6,7 @@ import { Redirect, Route, Switch, withRouter } from 'react-router-dom';
 import Header from './Header';
 import DashboardPage from '../components/DashboardPage';
 import HomePage from '../components/HomePage';
+import Users from '../components/Users';
 import LoginPage from './LoginPage';
 import RequireAuthentication from './RequireAuthentication';
 import AppMenu from './AppMenu';
@@ -48,6 +49,7 @@ export class App extends Component {
               path="/dashboard"
               component={RequireAuthentication(DashboardPage)}
             />
+            <Route path="/users" component={RequireAuthentication(Users)} />
           </Switch>
         </div>
       </div>

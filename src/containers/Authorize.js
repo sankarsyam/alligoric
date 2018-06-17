@@ -5,7 +5,6 @@ import { withRouter } from 'react-router-dom';
 
 export class Authorize extends Component {
   checkAuthenticated(allowedRoles) {
-    debugger;
     if (!allowedRoles) return true;
     const allowed = this.props.loginUser.roles.find(role =>
       allowedRoles.includes(role)

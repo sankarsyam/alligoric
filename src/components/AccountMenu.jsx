@@ -64,7 +64,6 @@ AccountMenu.propTypes = {
 };
 
 const mapStateToProps = state => {
-  debugger;
   return {
     isAuthenticated: state.user.isAuthenticated,
     loginUser: state.user.loggedInUser

@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
 import './AppMenu.css';
-import MdHome from 'react-icons/lib/md/home';
-import MdWork from 'react-icons/lib/md/work';
-import MdInbox from 'react-icons/lib/md/inbox';
-import MdDashboard from 'react-icons/lib/md/dashboard';
-import TiContacts from 'react-icons/lib/ti/contacts';
-import TiDatabase from 'react-icons/lib/ti/database';
 import Authorize from './Authorize';
+import { Button } from 'react-md';
 
 class AppMenu extends Component {
   render() {
@@ -14,36 +9,32 @@ class AppMenu extends Component {
     return (
       <div className="AppMenu">
         <Authorize>
-          <MdHome
+          <Button
             allowedRoles={['admin']}
-            className="menu-icon"
+            className="menu-new-icon"
+            icon
             onClick={() => history.push('/home')}
-          />
-          <MdDashboard
+          >
+            home
+          </Button>
+
+          <Button
             allowedRoles={['admin']}
-            className="menu-icon"
+            className="menu-new-icon"
+            icon
             onClick={() => history.push('/dashboard')}
-          />
-          <MdWork
+          >
+            dashboard
+          </Button>
+
+          <Button
             allowedRoles={['admin']}
-            className="menu-icon"
-            onClick={() => history.push('/dashboard')}
-          />
-          <MdInbox
-            allowedRoles={['admin']}
-            className="menu-icon"
-            onClick={() => history.push('/dashboard')}
-          />
-          <TiContacts
-            allowedRoles={['admin']}
-            className="menu-icon"
-            onClick={() => history.push('/dashboard')}
-          />
-          <TiDatabase
-            allowedRoles={['admin']}
-            className="menu-icon"
-            onClick={() => history.push('/dashboard')}
-          />
+            className="menu-new-icon"
+            icon
+            onClick={() => history.push('/users')}
+          >
+            people
+          </Button>
         </Authorize>
       </div>
     );
