@@ -8,7 +8,7 @@ import registerServiceWorker from './registerServiceWorker';
 import App from './containers/App';
 import configureStore from './store/configureStore';
 
-import './index.css';
+import './assets/scss/index.css';
 
 const history = createBrowserHistory();
 const store = configureStore(history);

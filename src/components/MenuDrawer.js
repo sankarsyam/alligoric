@@ -4,7 +4,7 @@ import Button from 'react-md/lib/Buttons/Button';
 import Drawer from 'react-md/lib/Drawers';
 import Toolbar from 'react-md/lib/Toolbars';
 
-import './MenuDrawer.css';
+import '../assets/scss/MenuDrawer.css';
 
 class MenuDrawer extends Component {
   constructor(props) {

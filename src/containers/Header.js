@@ -6,7 +6,7 @@ import Toolbar from 'react-md/lib/Toolbars';
 import { logout } from '../store/user/action';
 import AccountDropdown from '../components/AccountDropdown';
 
-import './Header1.css';
+import '../assets/scss/Header.css';
 
 class Header extends Component {
   renderMenuDrawer() {

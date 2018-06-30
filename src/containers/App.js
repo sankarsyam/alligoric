@@ -11,7 +11,7 @@ import LoginPage from './LoginPage';
 import RequireAuthentication from './RequireAuthentication';
 import AppMenu from './AppMenu';
 
-import './App.css';
+import '../assets/scss/App.css';
 import 'material-design-icons/iconfont/material-icons.css';
 
 export class App extends Component {

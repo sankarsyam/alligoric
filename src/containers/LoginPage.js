@@ -5,7 +5,7 @@ import { TextField, Button } from 'react-md';
 import MdLock from 'react-icons/lib/md/lock';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import './LoginPage.css';
+import '../assets/scss/LoginPage.css';
 import { loginCheck } from '../store/user/action';
 
 class LoginPage extends Component {

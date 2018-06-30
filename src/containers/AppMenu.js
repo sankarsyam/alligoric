@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './AppMenu.css';
+import '../assets/scss/AppMenu.css';
 import Authorize from './Authorize';
 import { Button } from 'react-md';
 

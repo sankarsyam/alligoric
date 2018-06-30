@@ -1,17 +1,8 @@
-// @import 'variables';
+
+@import 'react-md';
+@import 'variables';
+
 .users__user-list {
     // min-height: 92.5vh;
     background-color: #181818;
 }
-
-// .page-container {
-//     margin: $page-margin $page-margin 0;
-  
-//     @include respond-to(tablet) {
-//       max-width: 1200px;
-//     }
-  
-//     @include respond-to(small-desktop) {
-//       margin: $page-margin auto 0;
-//     }
-//   }                
