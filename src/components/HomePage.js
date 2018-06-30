@@ -13,7 +13,7 @@ export class HomePage extends Component {
           <Grid className="grid-example">
             {Array.from(Array(3)).map((_, i) => (
               <Cell key={i} size={4} className="DashboardPage-cell">
-                4
+                4........
               </Cell>
             ))}
           </Grid>
