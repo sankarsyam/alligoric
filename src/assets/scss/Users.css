@@ -3650,5 +3650,16 @@ svg.md-icon {
   margin: 20px auto;
   width: 70%; }
 
-.users__user-list {
+.UsersPage {
+  min-height: 92.5vh;
   background-color: #181818; }
+
+.UsersPage .md-card-title--primary {
+  background-color: #222222; }
+  .UsersPage .md-card-title--primary .md-text {
+    color: #1d7cc7; }
+
+.users-page_list {
+  background-color: #222222;
+  width: 100%;
+  height: 200px; }

@@ -1,5 +1,5 @@
-@import '../variables';
-
+@import 'variables';
+@import 'mixins';
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
@@ -28,4 +28,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.page-container {
+  margin: $page-margin $page-margin 0;
+
+  @include respond-to(tablet) {
+    max-width: 1200px;
+  }
+
+  @include respond-to(small-desktop) {
+    margin: $page-margin auto 0;
+  }
+}
+
+CardTitle {
+  background-color: #222222 !important;
 }

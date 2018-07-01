@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import './Dashboard.css';
+import '../assets/scss/Dashboard.css';
 
 class DashboardPage extends Component {
   render() {

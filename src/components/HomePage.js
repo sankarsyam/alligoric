@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 
-import './Home.css';
-import { GridList, Card, Media } from 'react-md';
+import '../assets/scss/Home.css';
 import { Grid, Cell } from 'react-md';
-import images from '../assets/images/sampleimages/img';
 
 export class HomePage extends Component {
   render() {
