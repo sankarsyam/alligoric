@@ -3647,7 +3647,6 @@ svg.md-icon {
 
 /* react-md overrides: Place common style overrides for react-md below */
 .md-card {
-  margin: 20px auto;
   width: 70%; }
 
 body {

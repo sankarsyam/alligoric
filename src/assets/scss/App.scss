@@ -31,7 +31,7 @@
 }
 
 .page-container {
-  margin: $page-margin $page-margin 0;
+  margin: $page-margin $page-margin-left 0;
 
   @include respond-to(tablet) {
     max-width: 1200px;

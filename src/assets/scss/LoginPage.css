@@ -1,6 +1,7 @@
 .LoginPage-card.md-card {
   width: 30%;
-  margin-top: 10%; }
+  margin-top: 10%;
+  margin-left: 35%; }
 
 .LoginPage-card-text * > .rrm-btn-container {
   display: flex;

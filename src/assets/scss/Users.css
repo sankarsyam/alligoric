@@ -3647,19 +3647,35 @@ svg.md-icon {
 
 /* react-md overrides: Place common style overrides for react-md below */
 .md-card {
-  margin: 20px auto;
   width: 70%; }
 
 .UsersPage {
-  min-height: 92.5vh;
+  min-height: 95vh;
   background-color: #181818; }
+  .UsersPage .users-page {
+    background: #222222; }
 
-.UsersPage .md-card-title--primary {
-  background-color: #222222; }
-  .UsersPage .md-card-title--primary .md-text {
-    color: #1d7cc7; }
+.UsersPage .md-card-title--primary .md-text {
+  color: #1d7cc7; }
 
 .users-page_list {
-  background-color: #222222;
   width: 100%;
-  height: 200px; }
+  height: 200px;
+  margin-top: 5px; }
+
+.user-page_table-row {
+  width: 100%;
+  height: 50px;
+  background-color: #E4EEF6;
+  border-top: 2px solid; }
+
+.user-page_table {
+  width: 100%; }
+
+.collapse {
+  display: none; }
+
+tbody {
+  width: 100%;
+  height: 250px;
+  background-color: #F4F4F4; }
