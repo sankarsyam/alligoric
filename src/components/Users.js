@@ -1,7 +1,6 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import '../assets/scss/Users.css';
 import Card from 'react-md/lib/Cards/Card';
-import CardText from 'react-md/lib/Cards/CardText';
 import CardTitle from 'react-md/lib/Cards/CardTitle';
 import Divider from 'react-md/lib/Dividers';
 import { Button } from 'react-md';
@@ -18,7 +17,6 @@ class Users extends Component {
   }
 
   getHeader = () => {
-    const { projectType } = this.props;
     return (
       <tr className="user-page_table-row">
         <td className="">
@@ -35,7 +33,6 @@ class Users extends Component {
   };
 
   getUserBasicDetails = () => {
-    const { projectType } = this.props;
     return (
       <tbody className={this.state.collapse ? 'collapse' : ''}>
         <span>Hello</span>
@@ -53,7 +50,6 @@ class Users extends Component {
   };
 
   render() {
-    const { projectType } = this.props;
     return (
       <div className="UsersPage">
         <Card className="users-page page-container">
@@ -73,7 +69,5 @@ class Users extends Component {
     );
   }
 }
-
-Users.propTypes = {};
 
 export default Users;

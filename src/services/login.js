@@ -12,3 +12,25 @@ export function userLogin(email, password) {
     throw error;
   }
 }
+
+// class Login {
+
+//   async userLogin(email, password) {
+//     const loginUrl = 'http://localhost:3001/login';
+//     console.log('&&&&&&&&&&&&&& Response &&&&&&&&&&&&&&&&'+loginUrl);
+//       const response = await fetch(loginUrl, {
+//         method: 'POST',
+//         headers: { 'Content-Type': 'application/json' },
+//         body: JSON.stringify({
+//           email: email,
+//           password: password
+//         })
+//       });
+//       console.log('&&&&&&&&&&&&&& Response &&&&&&&&&&&&&&&&');
+//       console.dir(response);
+//       return await checkStatus(response);
+//   }
+
+// }
+
+// export default new Login();
