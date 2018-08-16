@@ -9,6 +9,8 @@ const initialUserState = {
 export const user = createReducer(initialUserState, {
   [ActionTypes.AUTHENTICATE](state, action) {
     const loggedInUser = action.user;
+    console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
+    console.dir(loggedInUser);
     return { ...state, isAuthenticated: true, loggedInUser };
   },
   [ActionTypes.LOGOUT](state, action) {
