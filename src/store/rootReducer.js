@@ -10,7 +10,7 @@ const root = combineReducers({
   count,
   items,
   user,
-  ...loginReducer('loginForm'),
+  // ...loginReducer('loginForm'),
 });
 
 export default root;

@@ -43,8 +43,9 @@ export function loginCheck(username, password) {
     // dispatch(authRequest());
 
     try {
-      const response = await Login.userLogin(username, password);
-      const { user, jwt } = response;
+      const user = Login.userLogin(username, password);
+      // const response = await Login.userLogin(username, password);
+      // const { user, jwt } = response;
       // setSessionItem('jwt', jwt);
       // dispatch(authSuccess());
       // dispatch(currentUserSuccess(user));
