@@ -9,6 +9,7 @@ export default function RequireAuthentication(Component) {
       return (
         <Route
           render={props => {
+            console.log('isAuthenticated =' + this.props.isAuthenticated);
             return this.props.isAuthenticated ? (
               <Component {...props} />
             ) : (
@@ -31,7 +32,7 @@ export default function RequireAuthentication(Component) {
 
   function mapStateToProps(state) {
     return {
-      isAuthenticated: state.user.isAuthenticated,
+      isAuthenticated: state.app.isAuthenticated,
     };
   }
 

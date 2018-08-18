@@ -6,7 +6,8 @@ import MdLock from 'react-icons/lib/md/lock';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import '../assets/scss/LoginPage.css';
-import { loginCheck } from '../store/user/action';
+//import { loginCheck } from '../store/user/action';
+import { loginUser } from '../store/app/action';
 
 class LoginPage extends Component {
   constructor(props) {
@@ -22,7 +23,7 @@ class LoginPage extends Component {
   onSubmit(event) {
     event.preventDefault(); // to prevent refresh(default form behaviour)
     const { email, password } = this.state;
-    this.props.dispatch(loginCheck(email, password));
+    this.props.dispatch(loginUser({ email, password }));
     this.setState({ email: '', password: '' });
     // history('/dashboard');
   }

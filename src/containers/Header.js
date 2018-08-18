@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import Toolbar from 'react-md/lib/Toolbars';
-import { logout } from '../store/user/action';
+import { logoutUser } from '../store/app/action';
 import AccountDropdown from '../components/AccountDropdown';
 
 import '../assets/scss/Header.css';
@@ -12,7 +12,7 @@ class Header extends Component {
   renderMenuDrawer() {
     return this.props.isAuthenticated ? (
       <AccountDropdown
-        handleLogout={() => this.props.dispatch(logout())}
+        handleLogout={() => this.props.dispatch(logoutUser())}
         name={this.props.userName}
       />
     ) : null;
