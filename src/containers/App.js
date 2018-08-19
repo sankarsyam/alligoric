@@ -62,7 +62,7 @@ App.propTypes = {
 };
 
 const mapStateToProps = state => ({
-  isAuthenticated: state.user.isAuthenticated,
+  isAuthenticated: state.app.isAuthenticated,
 });
 
 export default withRouter(connect(mapStateToProps)(App));
