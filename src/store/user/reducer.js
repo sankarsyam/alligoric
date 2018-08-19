@@ -1,24 +1,18 @@
-import createReducer from '../createReducer';
-import * as ActionTypes from '../actionTypes';
+import { CURRENT_USER__SUCCESS } from '../actionTypes';
 
-const initialUserState = {
-  isAuthenticated: false,
-  loggedInUser: null,
+const initialState = {
+  loggedInUser: false,
 };
 
-export const user = createReducer(initialUserState, {
-  // [ActionTypes.AUTHENTICATE](state, action) {
-  //   const loggedInUser = action.user;
-  //   console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
-  //   console.dir(loggedInUser);
-  //   return { ...state, isAuthenticated: true, loggedInUser };
-  // },
-  // [ActionTypes.LOGOUT](state, action) {
-  //   return { ...state, ...initialUserState };
-  // },
-  // [ActionTypes.FLASH_MESSAGE__CREATE](state, action) {
-  //   return { ...state, message: action.message };
-  // },
-});
-
-export default user;
+export default function user(state = initialState, action) {
+  switch (action.type) {
+    case CURRENT_USER__SUCCESS:
+      console.log('action.user');
+      console.dir(action.user);
+      return Object.assign({}, state, {
+        loggedInUser: action.user,
+      });
+    default:
+      return state;
+  }
+}

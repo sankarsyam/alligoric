@@ -3,7 +3,7 @@ import { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 
-export class Authorize extends Component {
+class Authorize extends Component {
   checkAuthenticated(allowedRoles) {
     if (!allowedRoles) return true;
     const allowed = this.props.loginUser.roles.find(role =>

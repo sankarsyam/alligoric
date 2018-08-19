@@ -63,11 +63,9 @@ AccountMenu.propTypes = {
   loginUser: PropTypes.object
 };
 
-const mapStateToProps = state => {
-  return {
-    isAuthenticated: state.user.isAuthenticated,
+const mapStateToProps = state => ({
+    isAuthenticated: state.app.isAuthenticated,
     loginUser: state.user.loggedInUser
-  }
-};
+  });
 
 export default withRouter(connect(mapStateToProps)(AccountMenu));

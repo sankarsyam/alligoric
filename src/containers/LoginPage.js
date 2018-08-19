@@ -85,7 +85,7 @@ LoginPage.propTypes = {
 };
 
 const mapStateToProps = state => ({
-  isAuthenticated: state.user.isAuthenticated,
+  isAuthenticated: state.app.isAuthenticated,
   error: state.user.message ? state.user.message.list[0] : '',
 });
 

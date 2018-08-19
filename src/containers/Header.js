@@ -39,7 +39,7 @@ Header.propTypes = {
 };
 
 const mapStateToProps = state => ({
-  isAuthenticated: state.user.isAuthenticated,
+  isAuthenticated: state.app.isAuthenticated,
   userName: state.user.name,
 });
 

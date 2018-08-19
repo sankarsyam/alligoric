@@ -13,7 +13,6 @@ import {
 } from '../actionTypes';
 
 const initialState = {
-  currentUser: null,
   isAuthenticated: false,
   message: null,
   requesting: false,
@@ -42,14 +41,6 @@ export default function app(state = initialState, action) {
     case CURRENT_USER__REQUEST:
       return Object.assign({}, state, {
         requesting: true,
-      });
-    case CURRENT_USER__SUCCESS:
-      console.log('action.user');
-      console.dir(action.user);
-      return Object.assign({}, state, {
-        currentUser: action.user,
-        isAuthenticated: true,
-        requesting: false,
       });
     case FLASH_MESSAGE__CREATE:
       return Object.assign({}, state, {
